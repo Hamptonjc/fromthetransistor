@@ -1,0 +1,51 @@
+======= Transistors =======
+
+- Transistors are small electronic components with two main functions:
+	
+	- Switch circuits on and off
+	- Amplify signals
+
+- Uses a "semiconductor" like silicon to create an electron-emitting n type &
+  electron-absorbing P type.
+
+- arranged in 3 alternating layers i.e. (N-TYPE | P-TYPE | N-TYPE) with a pin
+  at each layer.
+
+- The 3 pins: E, B, C
+	- Emitter
+	- Base
+	- Collector
+
+- can act as switch:
+	- no voltage applied to base -> no voltage flow from collector to
+	  emitter
+
+	- A voltage above a certain threshold -> voltage flow.
+
+
+======= Operations With Transistors =======
+
+- The "switch" functionality of a transistor allows for "boolean logic" ->
+  True/False -> 1's & 0's
+
+- Operations can be done with this using "Look-Up-Tables" (LUTs)
+
+- Basic LUTs: AND, NAND, OR, NOR, XOR....
+
+- These basic ones take in two inputs and produce one output.
+
+- AND-gate example: Only outputs true if both inputs are true -> both inputs
+  are 1 -> both voltages are "high" (as opposed to "low voltages")
+
+- LUTs can be combined to do operations such as addition, subtraction, etc.
+
+- Can get way more indepth than described here.
+
+========= FPGAs ===========
+
+- Field Programmable Gated Arrays
+
+- Device based around a Configurable Logic Blocks (CLBs)
+
+- Configurable Logic Blocks made up of LUTs, FlipFlops, & Multiplexers
+
