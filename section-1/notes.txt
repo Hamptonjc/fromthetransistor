@@ -5,8 +5,8 @@
 	- Switch circuits on and off
 	- Amplify signals
 
-- Uses a "semiconductor" like silicon to create an electron-emitting n type &
-  electron-absorbing P type.
+- Uses a "semiconductor" like silicon to create an electron-emitting N-type &
+  electron-absorbing P-type.
 
 - arranged in 3 alternating layers i.e. (N-TYPE | P-TYPE | N-TYPE) with a pin
   at each layer.
@@ -16,6 +16,13 @@
 	- Base
 	- Collector
 
+Incoming Voltage -> Collector -> (N-TYPE | P-TYPE | N-TYPE) -> Emitter -> Outgoing Voltage
+					     ^
+					    Base
+					     ^
+				       Control Voltage
+
+
 - can act as switch:
 	- no voltage applied to base -> no voltage flow from collector to
 	  emitter
@@ -23,31 +30,49 @@
 	- A voltage above a certain threshold -> voltage flow.
 
 
-======= Operations With Transistors =======
-
 - The "switch" functionality of a transistor allows for "boolean logic" ->
   True/False -> 1's & 0's
 
-- Operations can be done with this using "Look-Up-Tables" (LUTs)
+- Operations are done with "logic gates"
 
-- Basic LUTs: AND, NAND, OR, NOR, XOR....
+https://www.youtube.com/watch?v=bp32ZYTY1uk
+
+- Some basic logic gates: AND, NAND, OR, NOR, XOR....
 
 - These basic ones take in two inputs and produce one output.
 
 - AND-gate example: Only outputs true if both inputs are true -> both inputs
   are 1 -> both voltages are "high" (as opposed to "low voltages")
 
-- LUTs can be combined to do operations such as addition, subtraction, etc.
+- logic gates can be combined to do operations such as addition, subtraction, etc.
 
-- Can get way more indepth than described here.
 
 ========= FPGAs ===========
 
+https://www.youtube.com/watch?v=CfmlsDW3Z4c&t=352s
+
 - Field Programmable Gated Arrays
 
-- Device based around a Configurable Logic Blocks (CLBs)
+- Chips that can be reprogrammed as needed
+
+- Based around a Configurable Logic Blocks (CLBs)
+
+- CLBs are made up of thousands to millions of transitors.
 
 - Configurable Logic Blocks made up of LUTs, FlipFlops, & Multiplexers
 
+========== LUTs =============
 
-.....
+https://www.youtube.com/watch?v=Usoo2j2TQio
+
+- Programmed by the designer to perform boolean algebra
+
+- example: if LUT has 3 inputs, it can implement any 3 input logic gate
+
+======== Flip-Flop ========
+
+https://www.youtube.com/watch?v=lrXjuotxqzE&t=864s
+
+
+!Not Finished!
+
