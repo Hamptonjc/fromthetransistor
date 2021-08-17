@@ -1,5 +1,7 @@
 ======= Transistors =======
 
+https://www.youtube.com/watch?v=WhNyURBiJcU&t=200s
+
 - Transistors are small electronic components with two main functions:
 	
 	- Switch circuits on and off
@@ -12,21 +14,13 @@
   at each layer.
 
 - The 3 pins: E, B, C
-	- Emitter
-	- Base
-	- Collector
-
-Incoming Voltage -> Collector -> (N-TYPE | P-TYPE | N-TYPE) -> Emitter -> Outgoing Voltage
-					     ^
-					    Base
-					     ^
-				       Control Voltage
-
+	- Emitter: Connected to N-Type
+	- Base: Connected to P-Type
+	- Collector: Connected to N-Type
 
 - can act as switch:
 	- no voltage applied to base -> no voltage flow from collector to
 	  emitter
-
 	- A voltage above a certain threshold -> voltage flow.
 
 
@@ -61,18 +55,73 @@ https://www.youtube.com/watch?v=CfmlsDW3Z4c&t=352s
 
 - Configurable Logic Blocks made up of LUTs, FlipFlops, & Multiplexers
 
-========== LUTs =============
+	========== LUTs =============
 
-https://www.youtube.com/watch?v=Usoo2j2TQio
+	https://www.youtube.com/watch?v=Usoo2j2TQio
 
-- Programmed by the designer to perform boolean algebra
+	- Programmed by the designer to perform boolean algebra
 
-- example: if LUT has 3 inputs, it can implement any 3 input logic gate
+	- example: if LUT has 3 inputs, it can implement any 3 input logic gate
 
-======== Flip-Flop ========
+	======== Flip-Flop ========
 
-https://www.youtube.com/watch?v=lrXjuotxqzE&t=864s
+	https://www.youtube.com/watch?v=lrXjuotxqzE&t=864s
+
+	- Clock:
+		- "Heartbeat of fpga"
+		- Is a square wave, oscillates between 1 & 0 (High & Low)
+		- Speed denoted in hertz:
+				- 1 MHz -> 1 million "cycles" per second
+		- Clock drives the flip flops
+
+	- flip flops have 2 inputs: Data in & clock
+		- Data in: 1-bit stream, either 1 or 0
+
+	- flip flops have 1 output
+
+	- Flip flops allow for the storage of state
+
+	======== Multiplexers ========
+	https://www.youtube.com/watch?v=FKvnmxte98A
+
+	- Simply put, it is a "data selector"
+
+	*** Note ***
+	- Definitely a lot more stuff about FPGAs, check out nandland.com for more
 
 
-!Not Finished!
+======== Integrated Circuits (ICs) =========
+
+https://www.youtube.com/watch?v=igVtLuqmxyM
+
+- ICs take components like transistors, and "integrate" them into circuits on
+	a single chip.
+	(hints the name)
+
+- There are Analog ICs and Digital ICs
+
+- Digital IC examples: logic gates, flipflops, shift registers, counters,
+	memories, & processors
+
+- we've already heard about logic gates & flip flops....
+
+- Memory ICs: RAM & ROM
+	- RAM (random access memory) -> Read & Write
+	- ROM (Read only memory) -> Read Only, programmed at factory
+	- Also EPROM: ROM that can be reprogrammed
+
+- Mixed signal ICs (analog & digital)
+	- There are converters to convert signals between analog and digital
+	
+	- ICUs -> Microcontrollers:
+		- chip that has all elements of computer: CPU, RAM, ROM, Clock, I/O etc.
+
+*** Note ***
+- Again, a lot more on ICs, but the key takeaway is that just as FPGAs, ICs are made up of transistors.
+
+
+
+
+
+
 
