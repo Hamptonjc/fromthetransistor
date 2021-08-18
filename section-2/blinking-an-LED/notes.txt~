@@ -1,0 +1,20 @@
+============== Intro to Verilog ==============
+
+https://www.nandland.com/verilog/tutorials/tutorial-introduction-to-verilog-for-beginners.html
+
+
+- wire: a fundamental unit of Verilog, for now we assume a wire can only be a
+  0 or a 1
+
+- Module: creates a block of code with defined inputs and outputs.
+
+- Always Blocks: Used in 2 scenarios:
+	- Combinational logic (example: and-gate)
+	- sequential logic (example: D-FlipFlop)
+
+
+
+
+
+
+

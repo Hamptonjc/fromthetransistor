@@ -1,0 +1,55 @@
+============== Intro to Verilog ==============
+
+https://www.nandland.com/verilog/tutorials/tutorial-introduction-to-verilog-for-beginners.html
+
+
+- wire: a fundamental unit of Verilog, for now we assume a wire can only be a
+  0 or a 1
+
+- Module: creates a block of code with defined inputs and outputs.
+
+- Always Blocks: Used in 2 scenarios:
+	- Combinational logic (example: and-gate)
+	- sequential logic (example: D-FlipFlop)
+
+- Sensitivity List: A list of all signals that will cause the Always block to
+  execute. A change of any of the signals will cause execution of the block.
+
+======== Always Block for Sequential Logic =======
+
+- Process block can have at most 2 signals in its sensitivity list:
+	- 2 iff asynchronous
+	- 1 iff synchronous
+
+- the block is only ran on the "clock edges"
+
+- in verilog "posedge" -> "positive edge" -> when the clock signal goes from 0
+  to 1.
+
+
+- "sequential logis is what the majority of your FPGA design will be
+  constructed with"
+
+============ Blinking an LED ============
+
+- Blink at different frequencies: 100 Hz, 50 Hz, 10 Hz, or 1 Hz.
+
+- Each freq. needs a process; in hardware design, processes stay running even when not in use
+
+.
+.
+.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
